@@ -4,12 +4,13 @@ import org.junit.jupiter.api.Test
 class NumberTranslatorTaskTest {
 
     @Test
-    public fun testNumberTranslatorTaskThousand(){
+    fun testNumberTranslatorTaskThousand(){
         val result = NumberTranslatorTask().translate(1000)
         Assertions.assertEquals("тысяча", result)
     }
+    
     @Test
-    public fun testNumberTranslatorTaskHundreds(){
+    fun testNumberTranslatorTaskHundreds(){
         val result = NumberTranslatorTask().translate(100)
         Assertions.assertEquals("сто", result)
 
@@ -22,24 +23,27 @@ class NumberTranslatorTaskTest {
         val result4 = NumberTranslatorTask().translate(999)
         Assertions.assertEquals("девятьсот девяносто девять", result4)
     }
+    
     @Test
-    public fun testNumberTranslatorTaskTens(){
+    fun testNumberTranslatorTaskTens(){
         val result = NumberTranslatorTask().translate(20)
         Assertions.assertEquals("двадцать", result)
 
         val result2 = NumberTranslatorTask().translate(99)
         Assertions.assertEquals("девяносто девять", result2)
     }
+    
     @Test
-    public fun testNumberTranslatorTaskOnes(){
+    fun testNumberTranslatorTaskOnes(){
         val result = NumberTranslatorTask().translate(1)
         Assertions.assertEquals("один", result)
 
         val result2 = NumberTranslatorTask().translate(9)
         Assertions.assertEquals("девять", result2)
     }
+    
     @Test
-    public fun testNumberTranslatorTaskTeens(){
+    fun testNumberTranslatorTaskTeens(){
         val result = NumberTranslatorTask().translate(11)
         Assertions.assertEquals("одиннадцать", result)
 
@@ -48,7 +52,7 @@ class NumberTranslatorTaskTest {
     }
 
     @Test
-    public fun testNumberTranslatorTaskNull(){
+    fun testNumberTranslatorTaskNull(){
         val result = NumberTranslatorTask().translate(0)
         Assertions.assertEquals("Некорректный ввод", result)
 

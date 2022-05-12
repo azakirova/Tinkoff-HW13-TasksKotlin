@@ -2,8 +2,9 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class FactorialTaskTest {
+
     @Test
-    public fun testFactorialTask() {
+    fun testFactorialTask() {
 
         val result = FactorialTask().factorial(0)
         Assertions.assertEquals("1", result)
@@ -29,5 +30,4 @@ class FactorialTaskTest {
         val result7 = FactorialTask().factorial(-1)
         Assertions.assertEquals("Некорректный ввод", result7)
     }
-
 }

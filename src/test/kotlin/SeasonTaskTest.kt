@@ -2,8 +2,9 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class SeasonTaskTest {
+
     @Test
-    public fun testSeasonTask(){
+    fun testSeasonTask(){
         val result = SeasonTask().getSeason(1)
         val result2 = SeasonTask().getSeason(2)
         val result3 = SeasonTask().getSeason(3)
