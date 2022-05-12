@@ -22,7 +22,7 @@ class SeasonTask {
         println(getSeason(month))
     }
 
-    private fun getSeason(arg: Int?): String {
+    fun getSeason(arg: Int?): String {
         return if (arg != null && arg >= 1 && arg <= 12) {
             seasons[arg]!!
         } else {

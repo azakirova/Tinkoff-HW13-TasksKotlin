@@ -9,7 +9,7 @@ class FactorialTask {
         println(factorial(n))
     }
 
-    private fun factorial(n: Int?): String {
+    fun factorial(n: Int?): String {
 
         if (n != null && n >= 0 && n <= 100) {
 
